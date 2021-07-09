@@ -19,7 +19,7 @@ We are developing a website whch is connected to a database, and it it will have
 
 ## Used technologies and language
 - <img src="https://media.discordapp.net/attachments/450722177860501541/862980636980805672/notepad.png" width="30">  Notepad++
-- HTML
+- <img crs="https://media.discordapp.net/attachments/450722177860501541/862982505380184108/HTML5logo.png" width="30">HTML
 - <img src="https://media.discordapp.net/attachments/450722177860501541/862980636494921748/css.png" width="30"> CSS
 - <img src="https://media.discordapp.net/attachments/450722177860501541/862980637169942528/js-logo.jpg" width="30"> JavaScript
 -  <img src="https://cdn.discordapp.com/attachments/811480580993974282/820292362851844126/word.png" width="30">  Word
