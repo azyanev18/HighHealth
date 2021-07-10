@@ -1,6 +1,7 @@
 body, html {
    position: relative;
   display:block;
+  margin: 0;
   font-family: Arial;
 }
 
@@ -70,12 +71,12 @@ body, html {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
+  -ms-flex: 26%; /* IE10 */
+  flex: 26%;
   background-color: #f1f1f1;
   padding-top:50px;
   padding-left:120px;
-  margin-left:100px;
+  margin-left:200px;
   height:100%;
   
 }
@@ -90,9 +91,10 @@ body, html {
 }
 
 
+
 .text{
 	word-wrap: break-word;
-    width:700px;
+  width:700px;
 	margin-left:20%;
 }
 
@@ -131,6 +133,3 @@ body, html {
   padding: 16px;
   text-decoration: none;
 }
-
-
-
