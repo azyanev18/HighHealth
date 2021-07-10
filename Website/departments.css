@@ -70,12 +70,12 @@ body, html {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 26%; /* IE10 */
-  flex: 26%;
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
   background-color: #f1f1f1;
   padding-top:50px;
   padding-left:120px;
-  margin-left:200px;
+  margin-left:100px;
   height:100%;
   
 }
@@ -89,16 +89,6 @@ body, html {
  
 }
 
-/* Fake image, just for this example */
-
- 
-
-
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
 
 .text{
 	word-wrap: break-word;
@@ -141,4 +131,6 @@ body, html {
   padding: 16px;
   text-decoration: none;
 }
+
+
 

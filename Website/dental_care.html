@@ -4,9 +4,9 @@
 <link rel="stylesheet" href="departments.css">
   <link rel="stylesheet" href="nav_and_footer.css">
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
 </head>
 <body>
 <div class="topnav" id="myTopnav">
@@ -16,7 +16,7 @@
   <a href="index.html" class="active">HOME</a>
   <a href="services.html">MEDICAL SERVICES</a>
   <a href="departments.html">DEPARTMENTS</a>
-  <a href="info.html">USEFUL INFORMATION</a>
+  <a href="info.html">KNOW YOUR PET</a>
   <a href="about.html">ABOUT US</a>
   <a href="booking.html">MAKE AN APPOINTMENT</a>
 
@@ -112,40 +112,56 @@ document.getElementById("defaultOpen").click();
 </script>
 
 
-<div class="footer-clean">
-        <footer>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Shelters</a></li>
-                            <li><a href="#">Map</a></li>
-                            <li><a href="#">Adoption</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Legacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <button class="btn">MAKE AN APPOINTMENT</button>
-                        
-                    </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">HighHealth © 2021</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <img src="images/logo2.jpg">
+    <h3>About<span>HighHealth</span></h3>
+
+    <p class="footer-links">
+      <a href="index.html">Home</a>
+      |
+      <a href="services.html">Services</a>
+      |
+      <a href="about.html">About</a>
+      |
+      <a href="booking.html">Make an appointment</a>
+    </p>
+
+    <p class="footer-company-name">© 2021 HighHealth Veterinary clinic</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+        <p><span>445 Bloomfield Ave</span>
+          Caldwell, New York - 07006</p>
     </div>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>++x xxx-xxx-xxxx</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@eduonix.com">support@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>About HighHealth</span>
+      HighHealth clinics provide a large number of services and are committed to continuously provide perfect care for your pets.</p>
+    <div class="footer-icons">
+      <img src="images/fb_icon.jpg">
+      <img src="images/tw_icon.jpg">
+      <img src="images/instagram.jpg">
+      <img src="images/in.jpg">
+      <img src="images/youtube.jpg">
+    </div>
+  </div>
+</footer>
+
+
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
