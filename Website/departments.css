@@ -51,6 +51,7 @@ body, html {
 
 @media screen and (max-width: 1920px) {
   .topnav.responsive {position: relative;}
+}
   
  
   .topnav.responsive a {
@@ -74,8 +75,6 @@ body, html {
   -ms-flex: 26%; /* IE10 */
   flex: 26%;
   background-color: #f1f1f1;
-  padding-top:50px;
-  padding-left:120px;
   margin-left:200px;
   height:100%;
   
@@ -109,6 +108,9 @@ body, html {
   height: 100%;
   overflow: auto;
   float:center;
+  margin-left:120px;
+  margin-top:50px;
+  
 }
 
 /* Sidebar links */
@@ -132,4 +134,28 @@ body, html {
   color: white;
   padding: 16px;
   text-decoration: none;
+}
+
+
+.timetable{
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  background-color: #f1f1f1;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  float:center;
+  margin-left:50px;
+
+}
+
+.day{
+  float:left;
+  text-align: left;
+}
+
+.time{
+  float:right;
+  text-align: right;
 }
