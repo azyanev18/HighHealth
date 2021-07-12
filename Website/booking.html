@@ -4,6 +4,8 @@
 <link rel="stylesheet" href="booking.css">
   <link rel="stylesheet" href="nav_and_footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -73,52 +75,166 @@
 <br></br>
 <br></br>
 </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14376.898046306353!2d-73.96523234724232!3d40.7538750047643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb8f5930a13c4b019!2sSutton%20Animal%20Hospital!5e0!3m2!1sbg!2sbg!4v1626126774686!5m2!1sbg!2sbg" width="600" height="450" style="border:0; padding:50px" allowfullscreen="" loading="lazy"></iframe>
+
   
 </div>
 
   
   <div class="main">
-    <div class="text">
-    <h2>Responsive Form</h2>
-    <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
-  </div>
-    <div class="container" style="width:800px">
-      <form action="/action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="fname">First Name</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <div class="testbox">
+      <form action="/">
+        <div class="banner">
+          <img src="images/logo2.jpg">
+        </div>
+        <center><p><h1>Appointment form</h1></p></center>
+        <center><p><h6>Please fill out the information below.</h6></p></center>
+        <br></br>
+        <div class="item">
+          <p>Name<span class="required">*</span></p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="First" required/>
+            <input type="text" name="name" placeholder="Last" required/>
           </div>
         </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="lname">Last Name</label>
+        <div class="contact-item">
+          <div class="item">
+            <p>Email<span class="required">*</span></p>
+            <input type="text" name="name" required/>
           </div>
-          <div class="col-75">
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <div class="item">
+            <p>Phone<span class="required">*</span></p>
+            <input type="text" name="name" required/>
           </div>
         </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="country">Country</label>
-          </div>
-          <div class="col-75">
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
+        <div class="position-item">
+          <div class="item">
+            <p>Pet<span class="required">*</span></p>
+            <select required>
+              <option value="1">Dog</option>
+              <option value="2">Cat</option>
+              <option value="3">Hamster</option>
+              <option value="4">Rabbit</option>
+              <option value="5">Bird</option>
             </select>
           </div>
+          <div class="item">
+            <p>Appointment Date<span class="required">*</span></p>
+            <input type="date" name="bdate" required/>
+            <i class="fas fa-calendar-alt"></i>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="subject">Subject</label>
+        <div class="week">
+
+          <div class="question" >
+            <label>Medical department:</label>
+            <div class="question-answer" >
+              <div>
+                <input type="radio" value="none" id="radio_10" name="activity"/>
+                <label for="radio_10" class="radio"><span>Internal Medicine</span></label>
+              </div>
+
+              <div>
+                <input type="radio" value="none" id="radio_11" name="activity"/>
+                <label for="radio_11" class="radio"><span>Cardiology</span></label>
+              </div>
+
+              <div>
+                <input type="radio" value="none" id="radio_12" name="activity"/>
+                <label for="radio_12" class="radio"><span>Surgery</span></label>
+              </div>
+
+              <div>
+                <input type="radio" value="none" id="radio_13" name="activity"/>
+                <label for="radio_13" class="radio"><span>Orthopedics and Traumatology</span></label>
+              </div>
+
+              <div>
+                <input type="radio" value="none" id="radio_14" name="activity"/>
+                <label for="radio_14" class="radio"><span>Infectious Diseases</span></label>
+              </div>
+
+              <div>
+                <input type="radio" value="none" id="radio_15" name="activity"/>
+                <label for="radio_15" class="radio"><span>Obstetrics and Gynecology</span></label>
+              </div>
+
+              <div>
+                <input type="radio" value="none" id="radio_16" name="activity"/>
+                <label for="radio_16" class="radio"><span>Dermatology</span></label>
+              </div>
+
+              <div>
+                <input type="radio" value="none" id="radio_17" name="activity"/>
+                <label for="radio_17" class="radio"><span>Parasitology</span></label>
+              </div>
+
+              <div>
+                <input  type="radio" value="none" id="radio_18" name="activity"/>
+                <label for="radio_18" class="radio"><span>Dental care</span></label>
+              </div>
+
+              <div>
+                <input  type="radio" value="none" id="radio_19" name="activity"/>
+                <label for="radio_19" class="radio"><span>Imaging</span></label>
+              </div>
+
+              <div>
+                <input  type="radio" value="none" id="radio_20" name="activity"/>
+                <label for="radio_20" class="radio"><span>Clinical Laboratory</span></label>
+              </div>
+
+              <div>
+                <input  type="radio" value="none" id="radio_21" name="activity"/>
+                <label for="radio_21" class="radio"><span>Clinical Pathology</span></label>
+              </div>
+
+            </div>
           </div>
-          <div class="col-75">
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <div class="question" style="margin-left:50px;">
+            <label>Services:</label>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="none" id="radio_3" name="day"/>
+                <label for="radio_3" class="radio"><span>Emergency care</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_4" name="day"/>
+                <label for="radio_4" class="radio"><span>Grooming</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_5" name="day"/>
+                <label for="radio_5" class="radio"><span>Adoption</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_6" name="day"/>
+                <label for="radio_6" class="radio"><span>Boarding</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_7" name="day"/>
+                <label for="radio_7" class="radio"><span>Breeding</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_8" name="day"/>
+                <label for="radio_8" class="radio"><span>Shelting</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_9" name="day"/>
+                <label for="radio_9" class="radio"><span>Consultations</span></label>
+              </div>
+            </div>
           </div>
+
+          <div class="item" style="margin-left:50px;">
+            <p>Reason for visit<span class="required">*</span></p>
+            <textarea rows="10" style="width:250%"></textarea>
+          </div>
+        </div>
+        
+
+        <div class="btn-block">
+          <button type="submit" href="/">Confirm the appointment</button>
         </div>
       </form>
     </div>
