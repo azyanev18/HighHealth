@@ -35,8 +35,8 @@
  
  /* Main column */
  .main {   
-   -ms-flex: 50%; /* IE10 */
-   flex: 50%;
+   -ms-flex: 45%; /* IE10 */
+   flex: 45%;
    background-color: white;
    margin-left:150px;
    margin-right:100px;
