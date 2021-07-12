@@ -1,0 +1,82 @@
+.text
+{
+    word-wrap: break-word;
+    width:700px;
+    margin:auto; 
+}
+
+
+div.column2 {
+    border: 1px solid #ccc;
+    
+  }
+  
+  div.column2:hover {
+    border: 1px solid #777;
+  }
+  
+  div.coulmn2 img {
+    width: 100%;
+    height: auto;
+    min-height:190px;
+    max-height:255px;
+    
+  }
+  
+  div.desc {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    
+  }
+  
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /* Create four equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 28%;
+    height: auto;
+  }
+
+  .column2{
+      float:left;
+      width:20%;
+      height: auto;
+  }
+  .column3{
+      float:left;
+      width:4%;
+      height: auto;
+  }  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+ 
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .column2  {
+      width: auto;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .column1  {
+      width:10%;
+    }
+  }
