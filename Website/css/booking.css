@@ -10,9 +10,25 @@
    margin: 0;
    font-family: Arial;
  }
- 
 
-   
+ .container1 {
+  position: relative;
+  margin: 0 auto;
+}
+
+.container1 img {vertical-align: middle;}
+
+.container1 .content {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  padding: 20px;
+  word-wrap: break-word;
+}
+ 
  
  /* Column container */
  .row {  
