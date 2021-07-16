@@ -27,6 +27,4 @@ We are developing a website whch is connected to a database, and it it will have
 - <img crs="https://media.discordapp.net/attachments/450722177860501541/862980637405478932/images.png"  width="30"> SSMS
 - <img crs="https://media.discordapp.net/attachments/450722177860501541/862980636792193044/sql.png"  width="30"> SQL
 
- ---
-## More information
-You will be able to find more information in our [DOCUMENTATION]
+
