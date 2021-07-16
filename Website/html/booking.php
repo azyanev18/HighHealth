@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <link rel="stylesheet" href="../css/booking.css">
@@ -55,8 +56,8 @@
 
 <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $PetErr = "";
-$name = $email = $gender = $comment = $Pet = "";
+$nameErr = $emailErr = $petErr = "";
+$name = $email = $pet = $comment = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -84,9 +85,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $Pet = test_input($_POST["Pet"]);
     // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$Pet)) {
-      $PetErr = "Invalid URL";
-    }
   }
 
   if (empty($_POST["comment"])) {
@@ -95,10 +93,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $comment = test_input($_POST["comment"]);
   }
 
-  if (empty($_POST["gender"])) {
-    $genderErr = "";
+  if (empty($_POST["pet"])) {
+    $petErr = "";
   } else {
-    $gender = test_input($_POST["gender"]);
+    $pet = test_input($_POST["pet"]);
   }
 }
 
@@ -108,6 +106,7 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+
 ?>
 
 <h2>Make an appointment today!</h2>
@@ -119,17 +118,19 @@ function test_input($data) {
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
   Pet: <input type="text" name="Pet" value="<?php echo $Pet;?>">
-  <span class="error"><?php echo $PetErr;?></span>
+
   <br><br>
   Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
   <br><br>
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">
-  <span class="error">* <?php echo $genderErr;?></span>
+  pet:
+  <input type="radio" name="pet" <?php if (isset($pet) && $pet=="female") echo "checked";?> value="female">
+  <input type="radio" name="pet" <?php if (isset($pet) && $pet=="male") echo "checked";?> value="male">
+  <input type="radio" name="pet" <?php if (isset($pet) && $pet=="other") echo "checked";?> value="other">
+  <span class="error">* <?php echo $petErr;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
+
+  
 </form>
 
 
@@ -154,17 +155,14 @@ function test_input($data) {
 
   <div class="footer-center">
     <div>
-      <i class="fa fa-map-marker"></i>
         <p><span>445 Bloomfield Ave</span>
           Caldwell, New York - 07006</p>
     </div>
 
     <div>
-      <i class="fa fa-phone"></i>
       <p>++x xxx-xxx-xxxx</p>
     </div>
     <div>
-      <i class="fa fa-envelope"></i>
       <p><a href="mailto:azyanev@gmail.com">support@gmail.com</a></p>
     </div>
   </div>
@@ -193,3 +191,20 @@ function myFunction() {
 </script>
 </body>
 </html>
+<?php
+
+$conn = new mysqli('localhost', 'root','', 'mydb');
+if($conn->connect_error)
+{
+ die('Connection Failed : ' .$conn->connect_error);
+} else{
+$stmt = $conn->prepare("insert into appointments(Name, Family, Pet, Comment)
+values(?, ?, ?, ?)");
+$stmt->bind_param("ssss", $name, $email, $comment, $pet);
+$stmt->execute();
+echo "Successful";
+$stmt->close();
+$conn->close();
+
+}
+?>
